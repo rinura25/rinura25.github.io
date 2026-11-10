@@ -16,6 +16,25 @@ body {
 }
 main { flex: 1 0 auto; min-width: 0; }
 header#banner { margin: 25px 0; }
+.banner {
+  display: block;
+  position: relative;
+  height: clamp(90px, 20vw, 144px);
+  background: url(images/header.jpg) center / cover;
+  border: 1px solid #000;
+  text-decoration: none;
+}
+.banner span {
+  position: absolute;
+  left: 14px;
+  bottom: 8px;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: bold;
+  line-height: 1;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+}
+.updates .date { margin-right: 6px; }
 h1, h2, h3 { margin-bottom: 0; line-height: 1.15; }
 p { margin: 12px 0; }
 img { display: block; max-width: 100%; margin: 0 auto; }
